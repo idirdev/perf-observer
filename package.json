@@ -1,0 +1,20 @@
+{
+  "name": "@idirdev/perf-observer",
+  "version": "1.0.0",
+  "description": "Performance monitoring toolkit for Node.js applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": ["performance", "monitoring", "metrics", "profiling", "benchmarking"],
+  "author": "idirdev",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
