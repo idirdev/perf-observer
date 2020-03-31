@@ -60,3 +60,25 @@ report.print(collector.aggregateAll());
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+Perf Observer est une boîte à outils complète de surveillance des performances pour les applications Node.js et TypeScript. Elle offre des minuteries haute résolution, un suivi de la mémoire, le profilage CPU, l'agrégation de métriques et des décorateurs TypeScript pour instrumenter facilement votre code.
+
+### Installation
+```bash
+npm install @idirdev/perf-observer
+```
+
+### Utilisation
+```typescript
+import { measureAsync, MetricsCollector, Reporter } from '@idirdev/perf-observer';
+
+const { result, timing } = await measureAsync('ma-requete', () => db.query('SELECT ...'));
+console.log(`Durée : ${timing.duration.toFixed(2)}ms`);
+```
+
+Consultez la documentation anglaise ci-dessus pour les détails sur le Timer, le MemoryTracker, le Profiler, les métriques et les décorateurs.
