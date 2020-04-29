@@ -82,3 +82,4 @@ console.log(`Durée : ${timing.duration.toFixed(2)}ms`);
 ```
 
 Consultez la documentation anglaise ci-dessus pour les détails sur le Timer, le MemoryTracker, le Profiler, les métriques et les décorateurs.
+
